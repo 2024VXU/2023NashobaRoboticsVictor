@@ -1,4 +1,4 @@
-package frc.robot.commands;
+package frc.robot.commands.test;
 
 import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
 import edu.wpi.first.wpilibj2.command.CommandBase;
@@ -14,6 +14,7 @@ public class SingleModuleCommand extends CommandBase {
     @Override
     public void initialize() {
         module = new SwerveModule(
+            0,
             Constants.Swerve.FRONT_RIGHT_MOVE_PORT,
             Constants.Swerve.FRONT_RIGHT_TURN_PORT,
             Constants.Swerve.FRONT_RIGHT_SENSOR_PORT,
